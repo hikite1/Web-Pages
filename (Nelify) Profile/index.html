@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Keith Jackson's Profile Page</title>
+    </style>
+    <link rel="stylesheet" type="text/css" href="profile.css" media="all" />
+    <!-- Served to screens that are at least 20em wide -->
+    <link rel="stylesheet" href="profile.css" media="(min-width: 20em)" />
+    <!-- Served to screens that are at least 64em wide -->
+    <link rel="stylesheet" href="profile.css" media="(min-width: 64em)" />
+    <!-- Served to screens that are at least 90em wide -->
+    <link rel="stylesheet" href="profile.css" media="(min-width: 90em)" />
+    <!-- Served to screens that are at least 120em wide -->
+    <link rel="stylesheet" href="profile.css" media="(min-width: 120em)" />
+    <link href="https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="jumbotron">
+      <img src="images\Dragon Banner.jpg" alt="Dragon Banner">
+      <div class="text-wrapper">
+          <!--tags used to affect individual items in a string and add linked effects(fonts, effects, ...)-->
+          <h1 class="font-effect-fire-animation"><em>Ke<span style='color: #FFD774; font-size: 8vw;'>i</span><span style='color: #FFD774; font-size: 8vw;'>t</span><span style='color: #FBC00E; font-size: 8vw;'>h</span> <span style='color: #FBC00E; font-size: 8vw;'>J</span><span style='color: #E9A33A; font-size: 15vw;'>a</span><span style='color: #E9A33A; font-size: 20vw;'>c</span><span style='color: #E15B18; font-size: 15vw;'>k</span><span style='color:  #E15B18; font-size: 25vw;'>s</span><span style='color: rgb(223, 47, 16); font-size: 30vw;'>o</span><span style='color: rgb(223, 47, 16); font-size: 50vw;'>n</span></em></h1>
+      </div>      
+    </div>        
+    <div class="audio-player">
+        <audio src="mp3/Matisyahu - One Day (YouTube Version)_256k.mp3" title="One Day by Matisyahu" controls style loop> Your browser does not support HTML5 video. Here is <a href="mp3/Matisyahu - One Day (YouTube Version)_256k.mp3">a link to the audio</a> instead.
+        </audio>
+    </div>
+    <div class="profile">
+        <img id="moving-image" src="images/profile1.jpg" alt="KJ Profile Photo"/>
+    </div>
+    <div class="jumbotron2">
+        <img src="images/Chain Frame.png" alt="Chain Frame" />  
+        <div class="text-wrapper2">
+            <h2>About Me...</h2>
+            <ul>
+                <li><strong><h3>I was born in...</h3><br><h4>Metairie, La.</h4></strong>
+                </li>
+                <br>
+                <li><strong><h3>I now live in...</h3><br><h4>Metairie, La.</h4></strong>
+                </li>
+                <br>
+                <li><strong><h3>A personal fact no one would ever guess about me...</h3><br><h4>I taught myself how to build computers.</h4></strong>
+                </li>
+                <br>
+                <li><strong><h3>If I could replay a fun or big moment in life, it would be...</h3><br><h4>Between my fluffballs, football, bartending, bad decisions, and I am sure others; I have plenty of things I already replay. The second I choose one, I know I would wish I chose another.</h4></strong>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="photo_wheel">
+        <img src="images/profile2.jpg" alt="KJ Photo with fluffballs"/>    
+    </div>
+    <div class="jumbotron3">
+        <img src="images/Chain Frame.png" alt="Chain Frame" />
+        <div class="text-wrapper3">
+            <h2>Interests...</h2>
+            <ul>
+                <li><strong><h4></h4>My <a href="https://www.facebook.com/media/set/?set=a.1296256220411716&type=3">Dogs</a></h4></strong></li>
+                <li><strong>Playing D&D and creating free sources to share content and knowledge</strong></li>
+                <li><strong>Using <a href="https://docs.google.com/document/d/17567Hppyk2COzIKvL9-CIQ0_IQm45AF42KuItwaVZZc/edit?usp=sharing">Google Docs</a> to share information with others using HTML</strong></li>
+            </ul>
+        </div>
+    </div>
+    <!--link to script functions are best placed before the closing body tag-->
+    <script src="profile.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const loadEl = document.querySelector('#load');
+    });
+    </script>
+  </body>
+</html>

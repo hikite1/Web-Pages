@@ -1,0 +1,247 @@
+body {
+    background-image: url('https://th.bing.com/th/id/R.a7057b5bafd40c3391119b8a2cc474ca?rik=qrewtXk2DNEmuw&pid=ImgRaw&r=0');
+    background-attachment: fixed; /*image will not move when user scrolls the screen*/
+    background-position: center;
+    background-size: 100%;
+}
+
+.jumbotron img { /*this is the grouping selector for class jumbotron and img element. Both selectors must be met to effect the specificity of the element*/
+    margin: auto;
+    margin-left: 0%;
+    width: 98%;
+    border: 10px solid black;
+}
+
+.text-wrapper h1 { /*this is the grouping selector for class text-wrapper and h1. Both selectors must be met to effect the specificity of the element*/
+    width: 72%;
+    position: relative;
+    margin-top: -700px;
+    margin-left: 350px;
+    color: #ffffff;
+    font-size: 6vw;
+    font-family: 'Rancho', cursive;
+}
+
+.audio-player {
+    display: block;
+    margin-left: 475px;
+    margin-right: auto;
+    width: 50%;
+}
+
+.profile { /*profile class selector properties*/
+    position: relative;
+    width: 900px;
+    margin: -100 auto; /*sets farthest left margin*/
+}
+
+.profile #moving-image { /*this is the grouping selector for profile class and id='moving-image'*/
+    position: absolute;
+    margin-top: 25px;
+    width: 50%;
+}
+
+.jumbotron2 img {/*this is the grouping selector for class jumbotron2 and img element. Both selectors must be met to effect the specificity of the element*/
+    margin: auto;
+    margin-top: 450px;
+    margin-left: 0%;
+    width: 98%;
+    height: 1200px;
+}
+
+.text-wrapper2 h2 { /*this is the grouping selector for class text-wrapper2 and h2. Both selectors must be met to effect the specificity of the element*/
+    margin-top: -1025px;
+    margin-left: 150px;
+    margin-right: 175px;
+    text-align: center;
+    color: #A2DCE7;
+    font-size: 7vw;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+.text-wrapper2 h3 {/*this is the grouping selector for class text-wrapper2 and h3. Both selectors must be met to effect the specificity of the element*/
+    margin-top: -50px;
+    margin-left: 150px;
+    margin-right: 175px;
+    text-align: center;
+    color: #A2DCE7;
+    font-size: 3vw;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+.text-wrapper2 h4 {/*this is the grouping selector for class text-wrapper2 and h4. Both selectors must be met to effect the specificity of the element*/
+    margin-top: -50px;
+    margin-left: 150px;
+    margin-right: 175px;
+    text-align: center;
+    color: #FBC00E;
+    font-size: 3vw;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+.photo_wheel img {/*this is the grouping selector for class photo_wheel and img element. Both selectors must be met to effect the specificity of the element*/
+    display: block;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.jumbotron3 img { /*this is the grouping selector for class jumbotron3 and img element. Both selectors must be met to effect the specificity of the element*/
+    margin: auto;
+    margin-left: 0%;
+    margin-top: 50px;
+    width: 98%;
+    height: 750px;
+}
+
+.text-wrapper3 { /*This is the selectot for class text-wrapper3*/
+    margin-top: -600px;
+    margin-left: 150px;
+    margin-right: 175px;
+    text-align: center;
+    color: #A2DCE7;
+    font-size: 3vw;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+.text-wrapper3 h2 { /*this is the grouping selector for class text-wrapper3 and h2. Both selectors must be met to effect the specificity of the element*/
+    margin-top: -50px;
+    margin-left: 150px;
+    margin-right: 175px;
+    text-align: center;
+    color: #FBC00E;
+    font-size: 6vw;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+
+@media only screen and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+}
+
+/*********
+iPad 3
+**********/
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+/* iPhone 5 ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6 ----------- */
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6+ ----------- */
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+/* Samsung Galaxy S3 ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
