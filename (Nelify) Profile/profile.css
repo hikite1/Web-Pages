@@ -1,80 +1,127 @@
 body {
+    max-width: 70vw; /* Set your desired maximum width */
+    margin: 0; /* Center the content horizontally */
     background-image: url('https://th.bing.com/th/id/R.a7057b5bafd40c3391119b8a2cc474ca?rik=qrewtXk2DNEmuw&pid=ImgRaw&r=0');
     background-attachment: fixed; /*image will not move when user scrolls the screen*/
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
+    font-size: 16em; /*Use base font size for text */
+    padding: 0; /*Remove default body padding for consistency */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1.5em, 1fr)); /* Responsive grid layout */
+}
+
+/* Jumbotron styles */
+.jumbotron {
+    width: 90vw;
+    height: 33vw;
+    text-align: center;
+    padding: .1em;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    border: .1em solid black;
+    margin-top: .2em;
+    margin-left: .01em;
 }
 
 .jumbotron img { /*this is the grouping selector for class jumbotron and img element. Both selectors must be met to effect the specificity of the element*/
     margin: auto;
     margin-left: 0%;
     width: 98%;
-    border: 10px solid black;
+    border: .05em solid black;
 }
 
-.text-wrapper h1 { /*this is the grouping selector for class text-wrapper and h1. Both selectors must be met to effect the specificity of the element*/
-    width: 72%;
-    position: relative;
-    margin-top: -700px;
-    margin-left: 350px;
-    color: #ffffff;
-    font-size: 6vw;
+/* Adjust other element styles using Flexbox */
+.text-wrapper {   
+    font-size: 1rem; /* Use rem units for font size */
     font-family: 'Rancho', cursive;
+    text-align: center; /*Center text horizontally*/
+    margin-top: -50em; /* Move text up by 500px */
+    margin-left: 18em; /* Move text to the right by 100px */
 }
 
 .audio-player {
     display: block;
-    margin-left: 475px;
-    margin-right: auto;
+    margin-left: center;
     width: 50%;
+    margin-top: 1.3em;
 }
 
 .profile { /*profile class selector properties*/
     position: relative;
-    width: 900px;
-    margin: -100 auto; /*sets farthest left margin*/
+    width: 50vw;
+    margin: 0 auto; /*sets farthest left margin*/
 }
 
 .profile #moving-image { /*this is the grouping selector for profile class and id='moving-image'*/
     position: absolute;
-    margin-top: 25px;
+    margin-top: .05em;
     width: 50%;
 }
 
-.jumbotron2 img {/*this is the grouping selector for class jumbotron2 and img element. Both selectors must be met to effect the specificity of the element*/
-    margin: auto;
-    margin-top: 450px;
-    margin-left: 0%;
-    width: 98%;
-    height: 1200px;
+.chainborder {
+    position: relative;
+    
 }
 
-.text-wrapper2 h2 { /*this is the grouping selector for class text-wrapper2 and h2. Both selectors must be met to effect the specificity of the element*/
-    margin-top: -1025px;
-    margin-left: 150px;
-    margin-right: 175px;
-    text-align: center;
+.chainborder img {
+    display: block;
+    margin: -1.5em;
+    margin-top: 1.5em;
+    width: 250%;
+    height: 80%;
+    object-fit: contain; /* Adjust the object-fit as needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border: .1em solid black;
+}
+
+.text-wrapper2 {
+    margin-top: -20em; /* Adjust the top margin as needed */
     color: #A2DCE7;
-    font-size: 7vw;
+    font-size: 3rem;
     font-family: 'Sedgwick Ave Display', cursive;
 }
 
-.text-wrapper2 h3 {/*this is the grouping selector for class text-wrapper2 and h3. Both selectors must be met to effect the specificity of the element*/
-    margin-top: -50px;
-    margin-left: 150px;
-    margin-right: 175px;
-    text-align: center;
+.text-wrapper3 {
+    margin-top: auto; /* Adjust the top margin as needed */
+    text-align: left;
+    margin: -100px;
     color: #A2DCE7;
-    font-size: 3vw;
+    font-size: 4vw;
     font-family: 'Sedgwick Ave Display', cursive;
 }
 
-.text-wrapper2 h4 {/*this is the grouping selector for class text-wrapper2 and h4. Both selectors must be met to effect the specificity of the element*/
-    margin-top: -50px;
-    margin-left: 150px;
-    margin-right: 175px;
-    text-align: center;
-    color: #FBC00E;
+.in_thumbnail {
+    margin: 10em;
+    height: 2em;
+    width: 2em;
+    margin-top: -8em;
+}
+
+.github_thumbnail {
+    margin: 10em;
+    height: 2em;
+    width: 2em;
+    margin-top: -9.5em;
+}
+
+.hacker_thumbnail {
+    margin: 10em;
+    height: 2em;
+    width: 2em;
+    margin-top: -9.5em;
+}
+
+.in_thumbnail img,
+.github_thumbnail img,
+.hacker_thumbnail img {
+    background: none;
+    border: none;
+}
+
+.text-wrapper3 h3 {
+    margin-top: 10px; /* Adjust the top margin as needed */
+    color: #024025;
     font-size: 3vw;
     font-family: 'Sedgwick Ave Display', cursive;
 }
@@ -89,13 +136,12 @@ body {
 
 .jumbotron3 img { /*this is the grouping selector for class jumbotron3 and img element. Both selectors must be met to effect the specificity of the element*/
     margin: auto;
-    margin-left: 0%;
     margin-top: 50px;
-    width: 98%;
-    height: 750px;
+    width: 120%;
+    height: 400px;
 }
 
-.text-wrapper3 { /*This is the selectot for class text-wrapper3*/
+.text-wrapper9 { /*This is the selectot for class text-wrapper3*/
     margin-top: -600px;
     margin-left: 150px;
     margin-right: 175px;
@@ -119,129 +165,100 @@ ul {
     list-style-type: none;
 }
 
-/* Smartphones (portrait and landscape) ----------- */
+/* Add specific styles for small screens (e.g., smartphones) */
+@media screen and (max-width: 768px) {
+    .jumbotron {
+        margin-top: 5em;
+        width: 2em; /* Adjust the width of the jumbotron image on small screens */
+        height: 1em; /* Maintain the aspect ratio */
+        display: block; /* Center the image horizontally */
+        margin: 0 auto; /* Center the image horizontally */
+        background-size: cover;
+        background-position: center center;
+    }
+    .jumbotron img {
+        width: 2em; /* Adjust the width of the jumbotron image on small screens */
+        height: 1em; /* Maintain the aspect ratio */
+        display: block; /* Center the image horizontally */
+        margin: -.05em; /* Center the image horizontally */
+        margin-top: -.05em;
+    }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-/* Styles */
-}
+    /* Add specific styles for small screens as needed */
+    .text-wrapper {
+        font-size: 2rem; /* Use rem units for font size */
+        font-family: 'Rancho', cursive;
+        text-align: center; /*Center text horizontally*/
+        margin: 3.5em;
+        margin-top: -8.7em;
+    }
 
-/* Smartphones (landscape) ----------- */
+    /* Adjust media player container size */
+    .audio-player {
+        display: block;
+        margin: .6em;
+        width: 50%;
+        margin-top: -1.0em;
+    }
 
-@media only screen and (min-width : 321px) {
-/* Styles */
-}
+    .profile {
+        margin: -400;
+    }
 
-/* Smartphones (portrait) ----------- */
+    .profile #moving-image { /*this is the grouping selector for profile class and id='moving-image'*/
+        position: absolute;
+        margin-top: -.5em;
+        width: .9em;
+    }
 
-@media only screen and (max-width : 320px) {
-/* Styles */
-}
+    /* Example: Adjust styles for other elements on small screens */
+    .chainborder img {
+        width: 2em; /* Adjust the width of the jumbotron image on small screens */
+        height: 2em; /* Maintain the aspect ratio */
+        display: block; /* Center the image horizontally */
+        margin: .1em; /* Center the image horizontally */
+        margin-top: .7em;
+        background-color: rgba(0, 0, 0, 0.2);
+    }   
 
-/* iPads (portrait and landscape) ----------- */
+    .text-wrapper2 {
+        font-size: 2.3rem; /* Use rem units for font size */
+        font-family: 'Sedgwick Ave Display', cursive;
+        text-align: center; /*Center text horizontally*/
+        margin: 1.9em;
+        margin-top: -16em;
+    }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-/* Styles */
-}
+    .text-wrapper3 {
+        font-size: 3rem; /* Use rem units for font size */
+        font-family: 'Sedgwick Ave Display', cursive;
+        text-align: center; /*Center text horizontally*/
+        margin: 1em;
+        margin-top: 1em;
+    }
 
-/* iPads (landscape) ----------- */
+    br {
+        display: none; /* Hide the <br> element */
+    }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-/* Styles */
-}
-
-/* iPads (portrait) ----------- */
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-/* Styles */
-}
-
-/*********
-iPad 3
-**********/
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-/* Styles */
-}
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-/* Styles */
-}
-
-/* Desktops and laptops ----------- */
-
-@media only screen  and (min-width : 1224px) {
-/* Styles */
-}
-
-/* Large screens ----------- */
-@media only screen  and (min-width : 1824px) {
-/* Styles */
-}
-
-/* iPhone 4 ----------- */
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-/* Styles */
-}
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-/* Styles */
-}
-
-/* iPhone 5 ----------- */
-
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
-}
-
-/* iPhone 6 ----------- */
-
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
-}
-
-/* iPhone 6+ ----------- */
-
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
-}
-
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
-}
-/* Samsung Galaxy S3 ----------- */
-
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
-}
-
-/* Samsung Galaxy S4 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-/* Styles */
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-/* Styles */
-}
-
-/* Samsung Galaxy S5 ----------- */
-
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-/* Styles */
-}
-
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-/* Styles */
+    .in_thumbnail {
+        margin: .5em;
+        height: 3em;
+        width: 3em;
+        margin-top: -.1em;
+    }
+    
+    .github_thumbnail {
+        margin: 4.2em;
+        height: 2em;
+        width: 2em;
+        margin-top: -3.9em;
+    }
+    
+    .hacker_thumbnail {
+        margin: 8.2em;
+        height: 2em;
+        width: 2em;
+        margin-top: -6.1em;
+    }
 }

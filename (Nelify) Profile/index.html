@@ -4,18 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Keith Jackson's Profile Page</title>
-    </style>
     <link rel="stylesheet" type="text/css" href="profile.css" media="all" />
-    <!-- Served to screens that are at least 20em wide -->
-    <link rel="stylesheet" href="profile.css" media="(min-width: 20em)" />
-    <!-- Served to screens that are at least 64em wide -->
-    <link rel="stylesheet" href="profile.css" media="(min-width: 64em)" />
-    <!-- Served to screens that are at least 90em wide -->
-    <link rel="stylesheet" href="profile.css" media="(min-width: 90em)" />
-    <!-- Served to screens that are at least 120em wide -->
-    <link rel="stylesheet" href="profile.css" media="(min-width: 120em)" />
     <link href="https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
   </head>
   <body>
     <div class="jumbotron">
@@ -30,27 +22,46 @@
         </audio>
     </div>
     <div class="profile">
-        <img id="moving-image" src="images/profile1.jpg" alt="KJ Profile Photo"/>
+      <img id="moving-image" src="images/profile1.jpg" alt="KJ Profile Photo"/>
     </div>
-    <div class="jumbotron2">
-        <img src="images/Chain Frame.png" alt="Chain Frame" />  
-        <div class="text-wrapper2">
-            <h2>About Me...</h2>
-            <ul>
-                <li><strong><h3>I was born in...</h3><br><h4>Metairie, La.</h4></strong>
-                </li>
-                <br>
-                <li><strong><h3>I now live in...</h3><br><h4>Metairie, La.</h4></strong>
-                </li>
-                <br>
-                <li><strong><h3>A personal fact no one would ever guess about me...</h3><br><h4>I taught myself how to build computers.</h4></strong>
-                </li>
-                <br>
-                <li><strong><h3>If I could replay a fun or big moment in life, it would be...</h3><br><h4>Between my fluffballs, football, bartending, bad decisions, and I am sure others; I have plenty of things I already replay. The second I choose one, I know I would wish I chose another.</h4></strong>
-                </li>
-            </ul>
-        </div>
+    <div class="chainborder">
+      <img src="images/chainFrame.png" alt="Chain Frame" />     
+    <div class="text-wrapper2">
+      <h2>About Me...</h2>
+      <br>
+    </div>   
+    <div class="text-wrapper3">
+      <ul>
+        <li><strong>My <a href="https://www.linkedin.com/in/keithjackson1976/"><span style='color: blue;'>LinkedIn</span></a></strong>
+        </li>
+        <br>
+        <li><strong>My <a href="https://github.com/hikite1"><span style='color: black;'>Git</span><span style='color: white;'>Hub</span></a></strong>
+        </li>
+        <br>
+        <li><strong>My <a href="https://www.hackerrank.com/hikite1"><span style='color: #066b24;'>HackerRank<span></a></strong>
+        </li>
+      </ul>
+    <div class="in_thumbnail">
+      <img src="images\in_thumbnail.png" alt="LinkedIn Thumbnail">
     </div>
+    <div class="github_thumbnail">
+      <img src="images\github_thumbnail.png" alt="GitHub Thumbnail">
+    </div>
+    <div class="hacker_thumbnail">
+      <img src="images\hacker_thumbnail.jpg" alt="HackerRank Thumbnail">
+    </div>  
+    <!--link to script functions are best placed before the closing body tag-->
+    <script src="profile.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const loadEl = document.querySelector('#load');
+    });
+    </script>
+  </body>
+</html>
+
+
+<!--
     <div class="photo_wheel">
         <img src="images/profile2.jpg" alt="KJ Photo with fluffballs"/>    
     </div>
@@ -65,12 +76,14 @@
             </ul>
         </div>
     </div>
-    <!--link to script functions are best placed before the closing body tag-->
-    <script src="profile.js"></script>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const loadEl = document.querySelector('#load');
-    });
-    </script>
-  </body>
-</html>
+
+
+    Served to screens that are at least 20em wide 
+    <link rel="stylesheet" href="profile.css" media="(min-width: 20em)" />
+    Served to screens that are at least 64em wide 
+    <link rel="stylesheet" href="profile.css" media="(min-width: 64em)" />
+    Served to screens that are at least 90em wide 
+    <link rel="stylesheet" href="profile.css" media="(min-width: 90em)" />
+    Served to screens that are at least 120em wide 
+    <link rel="stylesheet" href="profile.css" media="(min-width: 120em)" />
+-->

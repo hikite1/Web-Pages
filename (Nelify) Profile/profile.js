@@ -20,19 +20,36 @@ function moveImg() {
   //declares an integer called containerOffset that stores how many pixels from where we want our new position for our image to start out at in relation to where it currently is on screen (xPosition).
 }
 
+function updateContainerWidth() {
+  if (window.innerWidth <= 768) {
+    containerWidth = 400;
+  } else {
+    containerWidth = 1250;
+  }
+  
+  maxPosition = containerWidth + containerOffset - theImg.clientWidth;
+}
+
 function setup() {
   theImg = document.getElementById("moving-image"); //theImg is now the same as the id moving-image from the .html file that linked this file
   containerOffset = document.querySelector('.profile').offsetLeft; //This is the starting position for .html class profile
   minXPosition = containerOffset;
   maxPosition = containerWidth + containerOffset - theImg.clientWidth;
-
+  updateContainerWidth();
   xPosition = theImg.offsetLeft + containerOffset;
 
   startMovingImg();
 }
 
 function startMovingImg() {
-  setInterval(moveImg, 100); //how many milliseconds before rerunning moveImg function. The higher the number the slower it moves
+  setInterval(moveImg, 300); //how many milliseconds before rerunning moveImg function. The higher the number the slower it moves
 }
 
-window.onload = setup; //calls the onload function setup when the page is loaded
+window.addEventListener('resize', () => {
+  updateContainerWidth();
+  xPosition = theImg.offsetLeft + containerOffset;
+});
+window.onload = () => {
+  setup(); //calls the onload function setup when the page is loaded
+  startMovingImg();
+};
