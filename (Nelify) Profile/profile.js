@@ -1,7 +1,7 @@
 let theImg; //intitializing value to anything and can use to link to an id in html that can combine code from the .html and .css files
 let xPosition; //The code declares two variables of type int, xPosition and yPosition.
 let speed = 5; //initializes value for speed as an integer to be used as a variable in functions
-let containerWidth = 1250; //sets furthest right margin
+let containerWidth = 1244; //sets furthest right margin
 let containerOffset; //returns (top, left, width, height) in pixels relative to the parent
 let minXPosition;
 let maxPosition;
@@ -21,10 +21,10 @@ function moveImg() {
 }
 
 function updateContainerWidth() {
-  if (window.innerWidth <= 768) {
-    containerWidth = 400;
+  if (window.innerWidth <= 1000) {
+    containerWidth = 500;
   } else {
-    containerWidth = 1250;
+    containerWidth = 1244;
   }
   
   maxPosition = containerWidth + containerOffset - theImg.clientWidth;
