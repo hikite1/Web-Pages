@@ -43,7 +43,7 @@ body {
 
 .audio-player {
     display: block;
-    margin-left: 15rem;
+    margin-left: 18rem;
     width: 50%;
     margin-top: 18rem;
 }
@@ -62,14 +62,14 @@ body {
 
 .chainborder img { 
     margin-top: 57rem;
-    margin-left: -40rem; 
+    margin-left: -33.5rem; 
     width: 73rem;
     background-color: rgba(0, 0, 0, 0.5); /* Sremi-transparent background */
     border: 1rem solid black;
 }
 
 .text-wrapper2 {
-    margin-left: -25rem;
+    margin-left: -15rem;
     margin-top: -60rem; /* Adjust the top margin as needed */
     color: #A2DCE7;
     font-size: 3rem;
