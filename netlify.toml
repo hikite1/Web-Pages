@@ -11,6 +11,9 @@
   #  to = "/index.html"
   #  status = 200
 
+  [site]
+  id = "a6c7c8e0-6df6-435c-916c-c763b23a9fc2"
+
   ## (optional) Settings for Netlify Dev
   ## https://github.com/netlify/cli/blob/main/docs/netlify-dev.md#project-detection
   #[dev]
