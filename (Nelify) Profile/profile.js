@@ -1,7 +1,7 @@
 let theImg; //intitializing value to anything and can use to link to an id in html that can combine code from the .html and .css files
 let xPosition; //The code declares two variables of type int, xPosition and yPosition.
 let speed = 5; //initializes value for speed as an integer to be used as a variable in functions
-let containerWidth = 1244; //sets furthest right margin
+let containerWidth = window.innerWidth; //sets furthest right margin
 let containerOffset; //returns (top, left, width, height) in pixels relative to the parent
 let minXPosition;
 let maxPosition;
@@ -21,34 +21,33 @@ function moveImg() {
 }
 
 function updateContainerWidth() {
-  if (window.innerWidth <= 1000) {
-    containerWidth = 500;
-  } else {
-    containerWidth = 1244;
-  }
-  
+  containerWidth = window.innerWidth * 0.95; // Set container width to 80% of the window width
   maxPosition = containerWidth + containerOffset - theImg.clientWidth;
 }
 
 function setup() {
-  theImg = document.getElementById("moving-image"); //theImg is now the same as the id moving-image from the .html file that linked this file
-  containerOffset = document.querySelector('.profile').offsetLeft; //This is the starting position for .html class profile
+  theImg = document.getElementById("moving-image");
+  containerOffset = document.querySelector('.profile').offsetLeft;
   minXPosition = containerOffset;
-  maxPosition = containerWidth + containerOffset - theImg.clientWidth;
   updateContainerWidth();
   xPosition = theImg.offsetLeft + containerOffset;
+  maxPosition = containerWidth + containerOffset - theImg.clientWidth;
 
   startMovingImg();
 }
 
+
 function startMovingImg() {
-  setInterval(moveImg, 300); //how many milliseconds before rerunning moveImg function. The higher the number the slower it moves
+  const interval = 300;
+  setInterval(moveImg, interval); //how many milliseconds before rerunning moveImg function. The higher the number the slower it moves
 }
 
 window.addEventListener('resize', () => {
   updateContainerWidth();
+  maxPosition = containerWidth + containerOffset - theImg.clientWidth;
   xPosition = theImg.offsetLeft + containerOffset;
 });
+
 window.onload = () => {
   setup(); //calls the onload function setup when the page is loaded
   startMovingImg();

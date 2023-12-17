@@ -1,127 +1,118 @@
 body {
-    max-width: 70rem; /* Set your desired maximum width */
-    margin: 0; /* Center the content horizontally */
-    background-image: url('https://th.bing.com/th/id/R.a7057b5bafd40c3391119b8a2cc474ca?rik=qrewtXk2DNEmuw&pid=ImgRaw&r=0');
-    background-attachment: fixed; /*image will not move when user scrolls the screen*/
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-image: url('https://th.bing.com/th/id/R.a7057b5bafd40c3391119b8a2cc474ca?rik=qrewtXk2DNEmuw&pid=ImgRaw');
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    font-size: 16rem; /*Use base font size for text */
-    padding: 0; /*Rremove default body padding for consistency */
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1.5rem, 1fr)); /* Responsive grid layout */
+    text-align: center;
 }
 
-/* Jumbotron styles */
 .jumbotron {
-    width: 76rem;
+    max-width: 76rem; /* Set maximum width for jumbotron */
+    width: 100%; /* Take full width of the parent container */
+    margin: 0 auto; /* Center the jumbotron horizontally */
     height: 30rem;
     text-align: center;
-    padding: .1rem;
-    background-color: rgba(0, 0, 0, 0.5); /* Sremi-transparent background */
-    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
     border: 1rem solid black;
-    margin-top: .2rem;
-    margin-left: .2rem;
+    margin-top: 0.2rem;
 }
 
-.jumbotron img { /*this is the grouping selector for class jumbotron and img elrement. Both selectors must be met to effect the specificity of the elrement*/
-    margin: 0rem;
-    margin-left: 0%;
+.jumbotron img {
     width: 98%;
-    border: .05rem solid black;
+    border: 0.05rem solid black;
     margin-top: 1.4rem;
 }
 
-/* Adjust other elrement styles using Flexbox */
-.text-wrapper {   
-    font-size: 1rem; /* Use rrem units for font size */
+.text-wrapper {
     font-family: 'Rancho', cursive;
-    text-align: center; /*Center text horizontally*/
-    margin-top: -46rem; /* Move text up by 500px */
-    margin-left: 18rem; /* Move text to the right by 100px */
+    text-align: center;
+    margin-top: -43rem; /* Adjust the margin-top as needed */
+    margin-left: 20rem;
 }
 
 .audio-player {
     display: block;
-    margin-left: 18rem;
-    width: 50%;
-    margin-top: 18rem;
+    margin: 2rem auto;
 }
 
 .profile { /*profile class selector properties*/
-    position: left;
-    width: 25rem;
+    position: relative;
 }
 
-.profile #moving-image { /*this is the grouping selector for profile class and id='moving-image'*/
+.profile #moving-image {
     position: absolute;
-    margin-top: 35rem;
-    margin-left: .2rem;
+    margin-top: 1%;
     width: 20rem;
 }
 
 .chainborder img { 
-    margin-top: 57rem;
-    margin-left: -33.5rem; 
-    width: 73rem;
+    max-width: 76rem; /* Set maximum width*/
+    margin: 23rem auto; 
+    width: 90%;
     background-color: rgba(0, 0, 0, 0.5); /* Sremi-transparent background */
     border: 1rem solid black;
 }
 
-.text-wrapper2 {
-    margin-left: -15rem;
-    margin-top: -60rem; /* Adjust the top margin as needed */
+.text-wrapper1 {
+    max-width: 76rem; /* Set maximum width*/
+    margin: -78rem auto;
     color: #A2DCE7;
-    font-size: 3rem;
+    font-size: 350%;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+.text-wrapper2 {
+    max-width: 76rem; /* Set maximum width*/
+    margin: 80rem auto;
+    color: #A2DCE7;
+    font-size: 300%;
     font-family: 'Sedgwick Ave Display', cursive;
 }
 
 .in_thumbnail {
-    margin-top: -47rem;
+    max-width: 76rem; /* Set maximum width*/
+    margin: -132rem -15rem auto;
 }
 
 .in_thumbnail img{
+    width: 10%;
     background: none;
-    border: none;
-    margin: 12rem;
-    height: 8rem;
-    width: 8rem;
+    border: none;  
 }
 
 .github_thumbnail {
-    margin-top: -22rem;
+    max-width: 76rem; /* Set maximum width*/
+    margin: -45rem -15rem auto;
 }
 
 .github_thumbnail img{
+    width: 30%;
     background: none;
-    border: none;
-    margin: 6rem;
-    height: 8rem;
-    width: 18rem;
+    border: none;  
 }
 
 .hacker_thumbnail {
-    margin-top: -22.5rem;
+    max-width: 76rem; /* Set maximum width*/
+    margin: -45.5rem -15rem auto;
 }
 
 .hacker_thumbnail img{
+    width: 8%;
     background: none;
-    border: none;
-    margin: 12.5rem;
-    height: 7rem;
-    width: 7rem;
+    border: none; 
 }
 
 .replit_thumbnail {
-    margin-top: -27rem;
+    max-width: 76rem; /* Set maximum width*/
+    margin: -45.5rem -15rem auto;
 }
 
 .replit_thumbnail img{
+    width: 10%;
     background: none;
-    border: none;
-    margin: 11rem;
-    height: 10rem;
-    width: 10rem;
+    border: none; 
 }
 
 .text-wrapper3 h3 {
@@ -137,10 +128,10 @@ ul {
 
 /* Style for the navigation bar */
 .navbar {
+    margin: 2rem auto;
+    max-width: 76rem; /* Set maximum width*/
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0);
-    margin-top: 3rem;
-    margin-left: -9rem;
     height: 6rem;
     width: 30rem;
     font-size: 4rem;
@@ -155,13 +146,13 @@ ul {
 }
 
 .dropdown .dropbtn {
-    font-size: 4rem;
+    font-size: 3rem;
     border: none;
     outline: none;
     background-color: rgba(0, 0, 0, 0);
     color: white;
     font-family: inherit;
-    margin: 0;
+    
 }
 
 /* Set the background of the dropdown content to transparent */
@@ -233,118 +224,133 @@ ul {
 /* Add specific styles for small screens (e.g., smartphones) */
 @media screen and (max-width: 768px) {
 
-    /* Jumbotron styles */
-    .jumbotron {
-        width: 90rem;
-        height: 30rem;
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('https://th.bing.com/th/id/R.a7057b5bafd40c3391119b8a2cc474ca?rik=qrewtXk2DNEmuw&pid=ImgRaw');
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
         text-align: center;
-        padding: .1rem;
-        background-color: rgba(0, 0, 0, 0.5); /* Sremi-transparent background */
-        color: white;
+        margin: 0 auto; /* Center the body */
+        /* Add more styles as needed */
+    }
+    
+    .jumbotron {
+        width: 398%; /* Set a maximum width relative to the parent container */
+        margin: 0 auto; /* Center the jumbotron horizontally */
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
         border: 1rem solid black;
-        margin-top: .2rem;
-        margin-left: 5rem;
+    }
+    
+    .jumbotron img {
+        height: 65%;
+        width: 96%;
+        border: 0.05rem solid black;
+        margin-top: 3rem;
     }
 
-    .jumbotron img { /*this is the grouping selector for class jumbotron and img elrement. Both selectors must be met to effect the specificity of the elrement*/
-        margin-top: 1rem;
-        margin-left: 1rem;
-        width: 85rem;
-        height: 25rem;
-        border: .05rem solid black;
-        margin-top: 1.4rem;
+    h1.font-effect-fire-animation {
+        font-size: .5rem; /* Adjust the font size for smaller screens */
+        /* Add other styles specific to the fire animation */
     }
-    .text-wrapper {   
-        font-size: 1rem; /* Use rrem units for font size */
+    
+    .text-wrapper {
+        font-size: .5px;
         font-family: 'Rancho', cursive;
-        text-align: center; /*Center text horizontally*/
-        margin-top: -46rem; /* Move text up by 500px */
-        margin-left: 18rem; /* Move text to the right by 100px */
+        text-align: center;
+        margin-top: -41rem; /* Adjust the margin-top as needed */
+        margin-left: 18rem;
     }
     
     .audio-player {
         display: block;
-        height: 50rem;
-        width: 50rem;
-        margin-left: 37rem;
-        margin-top: 18rem;
+        margin-left:133%;
+        margin-top: 10%;
     }
     
     .profile { /*profile class selector properties*/
-        position: left;
-        width: 25rem;
+        position: relative;
     }
     
-    .profile #moving-image { /*this is the grouping selector for profile class and id='moving-image'*/
+    .profile #moving-image {
         position: absolute;
-        margin-top: 35rem;
-        margin-left: .2rem;
-        width: 50rem;
+        margin-top: 1%;
+        width: 120%;
     }
     
     .chainborder img { 
-        margin-top: 90rem;
-        margin-left: -6rem; 
-        width: 80rem;
-        height: 150rem;
+        height: 150%;
+        width: 390%;
+        margin-top: 135%;
         background-color: rgba(0, 0, 0, 0.5); /* Sremi-transparent background */
         border: 1rem solid black;
     }
     
+    .text-wrapper1 {
+        margin-top: -250rem;
+        margin-left: 10rem;
+        color: #A2DCE7;
+        
+        font-family: 'Sedgwick Ave Display', cursive;
+        font-size: 5rem;
+        
+        text-align: center;
+        margin-top: -43rem; /* Adjust the margin-top as needed */
+        
+    }
+    
     .text-wrapper2 {
-        margin-left: 8rem;
-        margin-top: -140rem; /* Adjust the top margin as needed */
+        max-width: 76rem; /* Set maximum width*/
+        margin: 80rem 50%;
         color: #A2DCE7;
         font-size: 5rem;
         font-family: 'Sedgwick Ave Display', cursive;
     }
     
     .in_thumbnail {
-        margin-top: -102rem;
+        max-width: 76rem; /* Set maximum width*/
+        margin: -132rem -15rem auto;
     }
     
     .in_thumbnail img{
+        width: 10%;
         background: none;
-        border: none;
-        margin: 35rem;
-        height: 16rem;
-        width: 16rem;
+        border: none;  
     }
     
     .github_thumbnail {
-        margin-top: -58rem;
+        max-width: 76rem; /* Set maximum width*/
+        margin: -45rem -15rem auto;
     }
     
     .github_thumbnail img{
+        width: 30%;
         background: none;
-        border: none;
-        margin: 20rem;
-        height: 20rem;
-        width: 40rem;
+        border: none;  
     }
     
     .hacker_thumbnail {
-        margin-top: -62rem;
+        max-width: 76rem; /* Set maximum width*/
+        margin: -45.5rem -15rem auto;
     }
     
     .hacker_thumbnail img{
+        width: 8%;
         background: none;
-        border: none;
-        margin: 37rem;
-        height: 14rem;
-        width: 14rem;
+        border: none; 
     }
     
     .replit_thumbnail {
-        margin-top: -72rem;
+        max-width: 76rem; /* Set maximum width*/
+        margin: -45.5rem -15rem auto;
     }
     
     .replit_thumbnail img{
+        width: 10%;
         background: none;
-        border: none;
-        margin: 35rem;
-        height: 20rem;
-        width: 20rem;
+        border: none; 
     }
     
     .text-wrapper3 h3 {
@@ -360,10 +366,10 @@ ul {
     
     /* Style for the navigation bar */
     .navbar {
+        margin: 2rem auto;
+        max-width: 76rem; /* Set maximum width*/
         overflow: hidden;
         background-color: rgba(0, 0, 0, 0);
-        margin-top: 3rem;
-        margin-left: -9rem;
         height: 6rem;
         width: 30rem;
         font-size: 4rem;
@@ -378,13 +384,13 @@ ul {
     }
     
     .dropdown .dropbtn {
-        font-size: 4rem;
+        font-size: 3rem;
         border: none;
         outline: none;
         background-color: rgba(0, 0, 0, 0);
         color: white;
         font-family: inherit;
-        margin: 0;
+        
     }
     
     /* Set the background of the dropdown content to transparent */
@@ -414,5 +420,42 @@ ul {
     .dropdown-content a:hover {
         background-color: #ddd;
         color: black;
+    }
+    
+    
+    
+    .photo_wheel img {/*this is the grouping selector for class photo_wheel and img elrement. Both selectors must be met to effect the specificity of the elrement*/
+        display: block;
+        margin-top: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    
+    .jumbotron3 img { /*this is the grouping selector for class jumbotron3 and img elrement. Both selectors must be met to effect the specificity of the elrement*/
+        margin: auto;
+        margin-top: 50px;
+        width: 120%;
+        height: 400px;
+    }
+    
+    .text-wrapper9 { /*This is the selectot for class text-wrapper3*/
+        margin-top: -600px;
+        margin-left: 150px;
+        margin-right: 175px;
+        text-align: center;
+        color: #A2DCE7;
+        font-size: 3rem;
+        font-family: 'Sedgwick Ave Display', cursive;
+    }
+    
+    .text-wrapper3 h2 { /*this is the grouping selector for class text-wrapper3 and h2. Both selectors must be met to effect the specificity of the elrement*/
+        margin-top: -50px;
+        margin-left: 150px;
+        margin-right: 175px;
+        text-align: center;
+        color: #FBC00E;
+        font-size: 6rem;
+        font-family: 'Sedgwick Ave Display', cursive;
     }
 }
