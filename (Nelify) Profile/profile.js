@@ -52,3 +52,53 @@ window.onload = () => {
   setup(); //calls the onload function setup when the page is loaded
   startMovingImg();
 };
+
+// JavaScript to handle hover and show window preview
+function linkedInShowPreview() {
+  var linkedinPreview = document.getElementById("linkedin-preview");
+  linkedinPreview.style.display = "block";
+}
+
+function linkedInHidePreview() {
+  var linkedinPreview = document.getElementById("linkedin-preview");
+  linkedinPreview.style.display = "none";
+}
+
+function gitHubShowPreview() {
+  var githubPreview = document.getElementById("github-preview");
+  githubPreview.style.display = "block";
+}
+
+function gitHubHidePreview() {
+  var githubPreview = document.getElementById("github-preview");
+  githubPreview.style.display = "none";
+}
+
+function hackerrankShowPreview() {
+  var hackerrankPreview = document.getElementById("hackerrank-preview");
+  hackerrankPreview.style.display = "block";
+}
+
+function hackerrankHidePreview() {
+  var hackerrankPreview = document.getElementById("hackerrank-preview");
+  hackerrankPreview.style.display = "none";
+}
+
+var videoIndex = 0;
+var videoList = [
+    "348yyj_iG4s",
+    "bdgXuVDv9DM",
+    "Y_ISkADL330",
+    "70mGPnlkmBM",
+    "_rqwO6BJR18",
+    "gGFg6jzjius"
+    // Add more video IDs as needed
+];
+
+function rotateVideos() {
+    var frame = document.getElementById('youtube-frame');
+    videoIndex = (videoIndex + 1) % videoList.length;
+    frame.src = "https://www.youtube.com/embed/" + videoList[videoIndex] + "?mute=1";
+}
+
+setInterval(rotateVideos, 5000); // Rotate every 5 seconds

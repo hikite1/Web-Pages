@@ -30,60 +30,79 @@
     </div>
     <div class="chainborder">
       <img src="images/chainFrame.png" alt="Chain Frame" />
-      <div class="text-wrapper1">
-        <h2>About Me...</h2>
-      </div>
-      <div class="text-wrapper2">
-        <ul>
-          <li><strong>My <a href="https://www.linkedin.com/in/keithjackson1976/"><span style='color: blue;'>LinkedIn</span></a></strong></li>
-          <br>
-          <li><strong>My <a href="https://github.com/hikite1"><span style='color: black;'>Git</span><span style='color: white;'>Hub</span></a></strong></li>
-          <br>
-          <li><strong>My <a href="https://www.hackerrank.com/hikite1"><span style='color: #066b24;'>HackerRank<span></a></strong></li>
-          <li>
-            <div class="navbar">
-              <div class="dropdown">
-                <button class="dropbtn"><span style='color: #A2DCE7;'>My </span><span style='color: rgb(222, 116, 60); text-decoration: underline;'>Replit</span></button>
-                <div class="dropdown-content">
-                  <a href="https://replit.com/@hikite1/Adventure-Story">Adventure Story</a>
-                  <a href="https://replit.com/@hikite1/Turtle-Art">Turtle Art</a>
-                  <!-- Add more projects as needed -->
-                </div>
-              </div>
-            </div>
-            <div class="navbar2">
-              <div class="dropdown2">
-                <button2 class="dropbtn"><span style='color: black;'>🄶🄰🄼🄴🅂</span></button2>
-                <div class="dropdown-content2">
-                  <a href=""></a>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div> 
-      <div class="in_thumbnail">
-        <img src="images\in_thumbnail.png" alt="LinkedIn Thumbnail">
-      </div>
-      <div class="github_thumbnail">
-        <img src="images\github_thumbnail.png" alt="GitHub Thumbnail">
-      </div>
-      <div class="hacker_thumbnail">
-        <img src="images\hacker_thumbnail.jpg" alt="HackerRank Thumbnail">
-      </div>
-      <div class="replit_thumbnail">
-        <img src="images\replit_thumbnail.png" alt="Replit Thumbnail">
+    </div>
+    <div class="text-wrapper1">
+      <h2>About Me...</h2>
+    </div>
+    <div class="text-wrapper2-linkedin">
+      <img src="images/in_thumbnail.png" alt="LinkedIn Thumbnail">
+      <h3><strong>My <a href="https://www.linkedin.com/in/keithjackson1976/" id="linkedin-link" onmouseover="linkedInShowPreview()" onmouseout="linkedInHidePreview()"><span style='color: blue;'>LinkedIn</span></a></strong></h3>
+  
+      <!-- Window preview content within the same div -->
+      <div id="linkedin-preview" class="linkedin-preview">
+          <!-- Thumbnail image preview -->
+          <img id="linkedin-thumbnail" src="images/linkedin-thumbnail.png" alt="LinkedIn Preview">
       </div>
     </div>
-        <!--link to script functions are best placed before the closing body tag-->
-        <script src="profile.js"></script>
-        <script>
-          document.addEventListener('DOMContentLoaded', function () {
-            const loadEl = document.querySelector('#load');
-          });
-        </script>
-  </body>
+    <div class="text-wrapper2-github">
+      <img src="images\github_thumbnail.png" alt="GitHub Thumbnail">
+      <h3><strong>My <a href="https://github.com/hikite1" id="github-link"
+        onmouseover="gitHubShowPreview()" onmouseout="gitHubHidePreview()"><span style='color: black;'>Git</span><span style='color: white;'>Hub</span></a></strong></h3>
 
+      <!-- Window preview content within the same div -->
+      <div id="github-preview" class="github-preview">
+        <!-- Thumbnail image preview -->
+        <img id="github-thumbnail" src="images/github-thumbnail.png" alt="GitHub Preview">
+      </div>
+    </div>
+    <div class="text-wrapper2-hackerrank">
+      <img src="images\hacker_thumbnail.jpg" alt="HackerRank Thumbnail">
+      <h3><strong>My <a href="https://www.hackerrank.com/hikite1" id="hackerrank-link"
+        onmouseover="hackerrankShowPreview()" onmouseout="hackerrankHidePreview()"><span style='color: #066b24;'>HackerRank</span></a></strong></h3>
+
+        <!-- Window preview content within the same div -->
+      <div id="hackerrank-preview" class="hackerrank-preview">
+        <!-- Thumbnail image preview -->
+        <img id="hackerrank-thumbnail" src="images/hackerrank-thumbnail.png" alt="HackerRank Preview">
+      </div>
+    </div>
+    <div class="chainborder2">
+      <img src="images/chainFrame.png" alt="Chain Frame" />
+    </div>
+    <div class="text-wrapper3">
+      <h2>My Projects...</h2>
+    </div>    
+    <div class="navbar">
+      <div class="dropdown">     
+        <button2 class="dropbtn"><h3><span style='color: black; font-size: 4rem'>🄶🄰🄼🄴🅂</span><strong><span style='color: #A2DCE7;'> My </span><span style='color: #b83789;'>Games<span></strong></h3></button2>
+        <div class="dropdown-content">
+          <a href="">Coming Soon!</a>
+        </div>
+      </div>
+    </div>    
+    <div class="navbar2">      
+      <div class="dropdown2">             
+        <button class="dropbtn2"><img src="images\replit_thumbnail.png" alt="Replit Thumbnail"><span style='color: #A2DCE7;'>My </span><span style='color: rgb(222, 116, 60); text-decoration: underline;'>Replit</span></button>
+        <div class="dropdown2-content2">
+          <a href="https://replit.com/@hikite1/Adventure-Story">Adventure Story</a>
+          <a href="https://replit.com/@hikite1/Turtle-Art">Turtle Art</a>
+          <!-- Add more projects as needed -->
+        </div>
+      </div>
+    </div>
+    <div class="youtube-container">
+      <iframe id="youtube-frame" width="1000" height="550" src="https://www.youtube.com/embed/348yyj_iG4s?playlist=bdgXuVDv9DM,348yyj_iG4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    
+    <!--link to script functions are best placed before the closing body tag-->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="profile.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const loadEl = document.querySelector('#load');
+        });
+    </script>
+  </body>
 </html>
 
 
