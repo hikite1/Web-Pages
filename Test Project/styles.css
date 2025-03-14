@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://th.bing.com/th/id/R.a7057b5bafd40c3391119b8a2cc474ca?rik=qrewtXk2DNEmuw&pid=ImgRaw');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    margin-top: 0; /*remove default margin for h1*/
+}
+
+main {
+    flex: 1;
+    padding: 1rem;
+}
+
+.content {
+    text-align: center;
+}
+
+.text-wrapper {
+    position: absolute;
+    margin-top: -25%;
+    margin-left: 23%;
+    z-index: 2;
+}
